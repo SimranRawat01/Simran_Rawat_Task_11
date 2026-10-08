@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display - Thala 7 Sneaker Store</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header (Same as Landing Page) -->
+    <header class="navbar">
+        <div class="logo">
+            Thala <span class="highlight-blue">7.</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Brands <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+            <a href="#">More <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <a href="cart.html">
+                <div class="cart-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </a>
+            <div class="profile-pic">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+                    alt="User Profile">
+            </div>
+        </div>
+    </header>
+
+    <div class="product-page-wrapper">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="#">Home</a>
+            <span class="separator">&gt;</span>
+            <a href="#">THALA FOR A REASON</a>
+            <span class="separator">&gt;</span>
+            <span class="current">Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</span>
+        </nav>
+
+        <!-- Main Display Section -->
+        <main class="main-display">
+            <!-- Left: Main Product Image -->
+            <div class="main-image-container">
+                <img src="https://pngimg.com/d/running_shoes_PNG5816.png" alt="Seven By M.S.Dhoni Running Shoe"
+                    class="main-shoe-img">
+            </div>
+
+            <!-- Right: -->
+            <!-- product Details -->
+            <div class="product-details">
+                <h1 class="product-title">
+                    Seven By M.S.Dhoni<br>
+                    Women's Hogun Multi-Color<br>
+                    Running Shoes
+                </h1>
+                <!--  Description -->
+                <p class="product-description">
+                    For exceptional fit, feel and smooth transitions get going with these dual mid sole technology shoes
+                    constructed with molded EVS sock liner, gel at heel area, rubber outsole, fused upper and
+                    breathable...
+                </p>
+
+                <!-- Price -->
+                <div class="price-section">
+                    <div class="price-tag">
+                        <span class="currency">&#8377;</span>
+                        <span class="amount">1,334</span>
+                    </div>
+                    <!--  Discount info -->
+                    <div class="discount-info">
+                        <span class="save-tag">Save 12%</span>
+                        <span class="tax-info">Inclusive of all Taxes</span>
+                    </div>
+                </div>
+
+                <!-- Action Row  -->
+                <!--  Quantity -->
+                <div class="action-row">
+                    <div class="quantity-picker">
+                        <select id="quantity-select" class="quantity-select" aria-label="Select Quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down dropdown-arrow"></i>
+                    </div>
+                    <!-- Add to cart Button -->
+                    <button class="btn-add-cart">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Gallery Section (Scrolling container using flex) -->
+        <section class="bottom-gallery">
+            <div class="gallery-card">
+                <img src="https://pngimg.com/d/running_shoes_PNG5816.png" alt="Thumbnail Side View">
+            </div>
+            <div class="gallery-card">
+                <img src="https://pngimg.com/d/running_shoes_PNG5816.png" class="thumb-rotate-front"
+                    alt="Thumbnail Front View">
+            </div>
+            <div class="gallery-card">
+                <img src="https://pngimg.com/d/running_shoes_PNG5816.png" class="thumb-rotate-back"
+                    alt="Thumbnail Heel View">
+            </div>
+            <div class="gallery-card">
+                <img src="https://pngimg.com/d/running_shoes_PNG5816.png" class="thumb-rotate-sole"
+                    alt="Thumbnail Sole View">
+            </div>
+            <div class="gallery-card">
+                <img src="https://pngimg.com/d/running_shoes_PNG5816.png" alt="Thumbnail Alternate View">
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
